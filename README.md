@@ -18,4 +18,4 @@
 
 или
 
-    npm run start
+    npm start
