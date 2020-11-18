@@ -1,5 +1,9 @@
 export type UserId = string;
 
+export interface AppProps {
+    getUsers: () => void;
+}
+
 export interface User {
     id: UserId;
     name: string;

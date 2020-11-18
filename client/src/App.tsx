@@ -2,8 +2,12 @@ import React, { useEffect } from 'react';
 
 import UsersTableContainer from './containers/UsersTable';
 
-const App = (props) => {
-    useEffect(() => props.getUsers(), []);
+import { AppProps } from './types';
+
+const App = (props: AppProps) => {
+    useEffect(() => {
+        props.getUsers();
+    }, []);
 
     return <UsersTableContainer />;
 };
