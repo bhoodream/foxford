@@ -9,7 +9,13 @@ const App = (props: AppProps) => {
         props.getUsers();
     }, []);
 
-    return <UsersTableContainer />;
+    return (
+        <UsersTableContainer
+            users={props.users}
+            checkedUsersIds={props.checkedUsersIds}
+            checkedAll={props.checkedAll}
+        />
+    );
 };
 
 export default App;

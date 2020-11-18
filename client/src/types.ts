@@ -1,9 +1,5 @@
 export type UserId = string;
 
-export interface AppProps {
-    getUsers: () => void;
-}
-
 export interface User {
     id: UserId;
     name: string;
@@ -18,4 +14,11 @@ export type CheckedUsersIds = string[];
 export interface StoreState {
     users: Users;
     checkedUsersIds: CheckedUsersIds;
+}
+
+export interface AppProps {
+    getUsers: () => void;
+    users: Users;
+    checkedUsersIds: CheckedUsersIds;
+    checkedAll: boolean;
 }
