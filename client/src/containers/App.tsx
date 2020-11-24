@@ -4,7 +4,7 @@ import { getUsers } from '../store/actions';
 
 import { StoreState } from '../types';
 
-import App from '../App';
+import App from '../components/App';
 
 const mapStateToProps = (state: StoreState) => {
     return {

@@ -8,7 +8,7 @@ export const getUsers = () => (dispatch: any) =>
         .get('http://localhost:9000/users')
         .then(({ data }) => dispatch(setUsers(data)))
         .catch((e) =>
-            console.error(`Ошибка на загрузке пользователей!\n\n${e}`)
+            console.error(`Ошибка при загрузке пользователей!\n\n${e}`)
         );
 
 export const setUsers = (users: Users) => ({

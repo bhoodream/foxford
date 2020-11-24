@@ -17,7 +17,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Checkbox from '@material-ui/core/Checkbox';
 
-import { Users, CheckedUsersIds } from './types';
+import { Users, CheckedUsersIds } from '../types';
 
 const StyledTableCell = withStyles((theme: Theme) =>
     createStyles({

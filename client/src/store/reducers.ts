@@ -1,4 +1,4 @@
-import { StoreState, UserId } from '../types';
+import { StoreState } from '../types';
 
 import { INITIAL_STATE, SET_USERS, CHECK_USERS } from './Const';
 

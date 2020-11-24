@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { checkUsers } from '../store/actions';
 import { CheckedUsersIds } from '../types';
 
-import UsersTable from '../UsersTable';
+import UsersTable from '../components/UsersTable';
 
 const mapDispatchToProps = (dispatch: any) => {
     return {
